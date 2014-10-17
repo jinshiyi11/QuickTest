@@ -1,4 +1,4 @@
 QuickTest
 =========
 
-QuickX测试项目
+cocos2d-x QuickX测试项目
