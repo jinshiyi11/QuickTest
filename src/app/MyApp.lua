@@ -2,6 +2,7 @@
 require("config")
 require("framework.init")
 require("HttpTest")
+import("CryptoTest")
 
 local MyApp = class("MyApp", cc.mvc.AppBase)
 
@@ -14,6 +15,7 @@ function MyApp:run()
     self:enterScene("MainScene")
     
     --testHttp()
+    testCrypto()
 end
 
 return MyApp
