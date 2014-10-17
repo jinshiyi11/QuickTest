@@ -3,6 +3,7 @@ require("config")
 require("framework.init")
 require("HttpTest")
 import("CryptoTest")
+require("SignalTest")
 
 local MyApp = class("MyApp", cc.mvc.AppBase)
 
@@ -15,7 +16,8 @@ function MyApp:run()
     self:enterScene("MainScene")
     
     --testHttp()
-    testCrypto()
+    --testCrypto()
+    testSignal()
 end
 
 return MyApp
