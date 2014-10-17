@@ -1,8 +1,9 @@
 
 require("config")
 require("framework.init")
+require("ClassTest")
 require("HttpTest")
-import("CryptoTest")
+require("CryptoTest")
 require("SignalTest")
 
 local MyApp = class("MyApp", cc.mvc.AppBase)
@@ -15,9 +16,11 @@ function MyApp:run()
     cc.FileUtils:getInstance():addSearchPath("res/")
     self:enterScene("MainScene")
     
+    testClass()
+    --testSignal()
     --testHttp()
     --testCrypto()
-    testSignal()
+    
 end
 
 return MyApp
